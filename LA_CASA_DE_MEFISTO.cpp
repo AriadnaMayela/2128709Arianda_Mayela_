@@ -31,14 +31,13 @@ int main()
         getline(cin, nombre); //permite ejecutar los espacios en la variable  almacenando el texto 
         //Tuve un fall con el getline ya que omitia el primer caraacter y al eliminarlo tanto de descripcion y clasificacion se me rompia el programa
         cout << "ingrese el descripcion del articulo\n";
-        cin >> descripcion;
-
+        getline(cin, descripcion);
         cout << "ingrese la clasificacion del articulo\n";
-        cin>> clasificacion;
+        getline(cin, clasificacion);
         cout << "ingrese el anio emitido del articulo:\n";
         cin >> anio_emitido;
         cout << "ingrese el genero del articulo:\n";
-        cin >> genero;
+        getline(cin, genero);
         cout << "ingrese el precio unitario del articulo\n";
         cin >> precio_unitario;
         cout << "el valor del iva es" << iva;
